@@ -185,7 +185,8 @@ input.btn {
 
 .logo {
     width: 100%;
-     margin: 0 auto;
+    margin: 0 auto;
+    padding-bottom: 0;
 }
 
 .logo img {
@@ -518,6 +519,7 @@ footer {
   width: 100%;
   margin: auto;
   padding: 0 3%;
+  background-color: #dddddd;
 }
 
 .main-header .main-wrapper {
@@ -554,6 +556,7 @@ nav ul li {
     width: 100%;
     padding-top: 30px;
     border-bottom: solid 1px #ccc;
+    padding-bottom: 20px;
 }
 
 .top-img {
@@ -607,13 +610,18 @@ nav ul li {
 /************ NEWS ************/
 
  .feed {
-    width: 63%;
-    padding-top: 20px;
+    width: 61%;
+    
     border-right: none;
 }
 
 .feed h2 {
     font-size: 1.125em;
+}
+
+.feed-img {
+    width: 20%;
+    clear: none;
 }
 
 .feed-item {
@@ -630,23 +638,26 @@ nav ul li {
     margin: 0;
 }
 
-.feed-img {
-    width: 20%;
-    clear: none;
-}
-
-
 /************ ABOUT PAGE ***********/
 .contact-info {
     float: left;
 }
 
 .map-container {
-   width: 50%;
-   height: auto;
-   padding-bottom: 75%;
-   float: right;
-   display: inline-block;
+   width: 60%;
+   padding-bottom: 50%;
+   margin-right: 5%;
+   float: left;
+}
+
+.mission {
+    clear: both;
+    padding-top: 20px;
+}
+
+.team-img {
+  width: 20%;
+  padding-bottom: 20%;
 }
 
 /************ FOOTER ************/
@@ -666,6 +677,10 @@ nav ul li {
 
     h2 {
       font-size: 1.4em;
+    }
+
+    .main-header {
+      background-color: #dddddd;
     }
 
     /*********** FEATURED NEWS **********/
@@ -713,7 +728,6 @@ nav ul li {
 
      .feed {
         width: 100%;
-        float: none;
         clear: both;
         padding-top: 20px;
         border-top: 1px solid #ccc;
@@ -739,7 +753,6 @@ nav ul li {
         display: block;
     }
 
-    
     /*********** FOOTER **********/
 
     .footer-logo {

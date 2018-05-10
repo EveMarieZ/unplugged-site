@@ -103,6 +103,7 @@ body, html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     color: #222;
+    background-color: #eee;
 }
  
 a {
@@ -126,7 +127,7 @@ h1, h2, h3, h4 {
 }
  
 h1 {
-   font-size: 1.5em;
+   font-size: 1.4em;
    line-height: 1.6;
 }
  
@@ -186,7 +187,6 @@ input.btn {
 .logo {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 0;
 }
 
 .logo img {
@@ -196,11 +196,17 @@ input.btn {
 
 nav {
     width: 100%;
+    padding-top: 0;
+}
+
+nav i {
+    padding-right: 10px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -222,7 +228,7 @@ main {
     padding: 0 2%;
     margin: auto;
     clear: both;
-    background-color: #eee
+    max-width: 960px;
 }
 
 
@@ -230,7 +236,8 @@ main {
 
 .top-story {
     width: 100%;
-    padding-top: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
 }
 
 .top-img {
@@ -240,6 +247,7 @@ main {
 
 .top-img img {
       width: 100%;
+      border: solid 2px #000;
    }
 
 .top-info h1 {
@@ -254,6 +262,10 @@ main {
 
 .sidebar{
     width: 100%;
+}
+
+.sidebar i {
+    padding-right: 10px;
 }
 
 .sidebar-newsletter {
@@ -278,40 +290,39 @@ main {
 
 /*********** NEWS FEED **********/
 
-.feed {
-    width: 100%;
-}
+   .feed {
+     width: 100%;
+   }
 
-.feed-img {
-    width: 45%;
-    float: left;
-    margin: 0;
-    padding-right: 2%;
-    clear: both;
-}
+   .feed p {
+     display: none;
+   }
 
-.feed-img img {
-    width: 100%
-}
+   .feed-item {
+      clear: both;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+   }
 
-.feed-item {
-    clear: both;
-    border-bottom: solid 1px #ccc;
-    padding-bottom: 15px;
-}
+   .feed-type {
+      text-transform: uppercase;
+      font-size: 0.8em;
+   }
 
-.feed-type {
-    font-size: .625em;
-    text-transform: uppercase;
-}
+   .feed-item h2 {
+      margin: 0;
+   }
 
-.feed-item h2 a {
-    margin: 0;
-}
+   .feed-item h2 a {
+       color: #222;
+   }
 
-.feed-item p {
-    display: none;
-}
+   .feed-img {
+     width: 45%;
+     float: left;
+     margin: 0;
+     padding-right: 3%;
+   }
 
 /*********** ABOUT PAGE **********/
 
@@ -399,20 +410,28 @@ main {
 
 /************* FAQs **************/
 
+.faqs-item {
+      border-bottom: 1px solid #cccccc;
+   }
+
+.faqs-item h3, p {
+  font-weight: 400;
+}
 
 /*********** FOOTER **********/
 
 footer {
     width: 100%;
-    margin: auto;
-    background-color: #eee;
-    clear: both;
+     margin: auto;
+     border-top: 1px solid #ccc;
+     padding-top: 20px;
+     margin-top: 20px;
+     clear: both;
 }
 
 .footer-logo {
     width: 47.5%;
     margin: auto;
-    padding-top: 5%;
 }
 
 /*********** END STYLES **********/
@@ -523,7 +542,7 @@ footer {
 }
 
 .main-header .main-wrapper {
-    width: 96%;
+    width: 94%;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -531,6 +550,10 @@ footer {
 .logo {
     width: 40%;
     float: left;
+}
+
+.logo img {
+      max-width: 312px;
 }
 
 nav {
@@ -552,118 +575,118 @@ nav ul li {
 }
 
 /*********** FEATURED NEWS **********/
-.top-story {
-    width: 100%;
-    padding-top: 30px;
-    border-bottom: solid 1px #ccc;
-    padding-bottom: 20px;
-}
+   .top-story {
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
 
-.top-img {
-    width: 57%;
-    float: left;
-    padding-right: 3%;
-}
+    .top-img {
+      width: 57%;
+      float: left;
+      padding-right: 3%;
+    }
 
-.top-info {
-    width: 100%;
-    float: none;
-}
-
-.top-info h1 {
-    font-size: 1.5em;
-    margin: 0;
-}
+    .top-info {
+      width: 40%;
+      float: left;
+      top: 0;
+    }
 
 /************ SIDEBAR ************/
-.sidebar {
-    width: 37%;
-    float: right;
-    clear: none;
-    border-left: 1px solid #ccc;
-}
+  .sidebar {
+      clear: both;
+      width: 37%;
+      float: right;
+    }
+  .sidebar h2 {
+    font-size: 1.2em;
+  }
 
-.sidebar h2 {
-    font-size: 1.125em;
-}
-
-.sidebar p {
-    font-size: .875em;
-}
-
-.sidebar-newsletter,
-.sidebar-about-us,
-.sidebar-faqs {
-    padding: 0 20px 20px 20px;
-    border-bottom: solid 1px #ccc;
-}
-
-.sidebar-about-us,
-.sidebar-faqs {
-    display: block;
-}
-
-.sidebar-faqs {
-    border: none;
-}
+    .sidebar-about-us, .sidebar-faqs {
+      display: block;
+      border-bottom: 1px solid #ccc;
+      padding: 0 10px 20px 10px;
+    }
 
 /************ NEWS ************/
 
  .feed {
-    width: 61%;
-    
-    border-right: none;
-}
+      width: 60%;
+      float: left;
+      border-right: 1px solid #ccc;
+    }
 
-.feed h2 {
-    font-size: 1.125em;
-}
+    .feed h2 {
+      font-size: 1.125em;
+    }
 
-.feed-img {
-    width: 20%;
-    clear: none;
-}
+    .feed-img {
+      width: 35%;
+    }
 
-.feed-item {
-    padding-right: 20px;
-    clear: none;
-}
+    .feed-item {
+      padding-right: 20px;
+    }
 
-.feed-item h3 {
-    font-size: .75em;
-}
-
-.feed-item h2 {
-    font-size: 1.125em;
-    margin: 0;
-}
+    .feed-info {
+      width: 57%;
+    }
 
 /************ ABOUT PAGE ***********/
+
 .contact-info {
+    width: 40%;
     float: left;
 }
 
 .map-container {
-   width: 60%;
-   padding-bottom: 50%;
-   margin-right: 5%;
-   float: left;
+    position: relative;
+      padding-bottom: 40%;
+      height: 0;
+      overflow: hidden;
+      width: 58%;
+      float: left;
+      border: 1px solid #333;
+      margin-bottom: 40px;
+      margin-top: 30px;
 }
+
+
+    .map-container iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
 .mission {
-    clear: both;
-    padding-top: 20px;
-}
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 0;
+      clear: both;
+    }
 
-.team-img {
-  width: 20%;
-  padding-bottom: 20%;
-}
+    .team {
+      padding-top: 15px;
+    }
+
+    .team-member {
+      padding: 15px 0;
+    }
+
+    .team-img {
+      width: 20%;
+      padding-bottom: 20%;
+      margin-right: 10%;
+    }
 
 /************ FOOTER ************/
 
 .footer-logo {
-    width: 20%;
+    width: 30%;
+    margin: auto;
 }
 
 
@@ -699,6 +722,7 @@ nav ul li {
 
     .top-img img {
         max-width: 620px;
+
     }
 
     .top-info {
@@ -728,6 +752,7 @@ nav ul li {
 
      .feed {
         width: 100%;
+        float: none;
         clear: both;
         padding-top: 20px;
         border-top: 1px solid #ccc;
@@ -738,19 +763,30 @@ nav ul li {
         width: 20%;
     }
 
-    .feed-item p {
+    .feed p {
         display: block;
         margin-top: 0;
     }
 
-    .feed-item h2 {
-        padding-right: 20%;
+    .feed h2 {
+        margin: 0;
     }
  
     /*********** ABOUT PAGE **********/
+    .team-member {
+      padding:15px 0;
+    }
+
+    .team-img {
+      margin-right: 5%;
+    }
+
+    .team-name {
+      margin-top: 0;
+    }
 
     .team-description {
-        display: block;
+      display: block;
     }
 
     /*********** FOOTER **********/
